@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import styles from '../styles/home.module.css'
+import Navbar from '../comps/navbar'
+import Footer from '../comps/footer'
+import Image from 'next/image'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          <div style={{
+          zIndex: -2,
+          position: "fixed",
+          width: "100vw",
+          height: "100vh"
+          }}>
+        <Image
+          src="/website_bg.jpg"
+          alt="Image"
+          layout="fill"
+          objectFit="cover"
+          />
+        </div>
+          <div className={styles.content} style={{zIndex: -1}}>
+            <Navbar />
+            <main>{ children }</main>	
+            <Footer />
+        </div>
+        
+        
+        {children}
+      
+      </body>
     </html>
   );
 }
