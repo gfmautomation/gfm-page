@@ -822,8 +822,14 @@ section {
 }
 
 .skills .progress .skill .val {
+  margin-top: 22px;
+  margin-right: 20%;
   float: right;
   font-style: normal;
+}
+
+.skills .progress .skill .val .second {
+  margin-top:40px;
 }
 
 .skills .progress-bar-wrap {
