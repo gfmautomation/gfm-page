@@ -834,6 +834,7 @@ section {
 
 .skills .progress .skill .val .second {
   margin-top:40px;
+  float: right;
 }
 
 .skills .progress-bar-wrap {
@@ -1116,10 +1117,18 @@ section {
   height: 100%;
 }
 
+.img-fluid {
+  width: 180px;
+  border-radius: 50%;
+}
+
+
 .team .member .pic {
   overflow: hidden;
   width: 180px;
-  border-radius: 50%;
+  height: auto;
+  min-width: 180px;
+  max-height:180px;
 }
 
 .team .member .pic img {
