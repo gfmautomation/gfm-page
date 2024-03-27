@@ -394,6 +394,10 @@ h6 {
   background: #37517e;
 }
 
+#hero img{
+  width:90%;
+}
+
 #hero .container {
   padding-top: 72px;
 }
