@@ -1441,6 +1441,13 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
+.center-contact{
+  display: flex !important; 
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+}
+
 .contact .info i {
   font-size: 20px;
   color: #47b2e4;
