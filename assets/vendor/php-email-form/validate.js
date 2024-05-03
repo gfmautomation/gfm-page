@@ -37,7 +37,6 @@
                 php_email_form_submit(thisForm, action, formData);
               })
             } catch(error) {
-              console.log("ERROR HERE!")
               displayError(thisForm, error);
             }
           });
