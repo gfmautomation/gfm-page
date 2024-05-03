@@ -15,7 +15,7 @@
       let thisForm = this;
 
       let action = thisForm.getAttribute('action');
-      let recaptcha = thisForm.getAttribute('6LeC5c4pAAAAAH0zfM1PaFTtMr1PYi6mCoAVFKxJ');
+      let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
         displayError(thisForm, 'The form action property is not set!');
@@ -37,6 +37,7 @@
                 php_email_form_submit(thisForm, action, formData);
               })
             } catch(error) {
+              console.log("ERROR HERE!")
               displayError(thisForm, error);
             }
           });
