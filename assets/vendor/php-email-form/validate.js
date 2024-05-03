@@ -31,7 +31,7 @@
         if(typeof grecaptcha !== "undefined" ) {
           grecaptcha.ready(function() {
             try {
-              grecaptcha.execute(recaptcha, {action: 'https://formspree.io/f/mwkgrlrg'})
+              grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
               .then(token => {
                 formData.set('recaptcha-response', token);
                 php_email_form_submit(thisForm, action, formData);
@@ -56,6 +56,7 @@
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
+      console.log("\n\n"+action+"\n\n")
       if( response.ok ) {
         return response.text();
       } else {
