@@ -728,8 +728,14 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Want to get free software that can help you run your business and keep up to date with the latest technology? Join our newsletter for free advice every quarter.</p>
-            <form action="https://formspree.io/f/mwkgrlag" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="https://formspree.io/f/mwkgrlag" class="php-email-form" method="post">
+              <input type="email" name="email">
+              <input type="submit" value="Subscribe">
+              <div class="submit-result">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Thank you for subscribing!</div>
+              </div>
             </form>
           </div>
         </div>
