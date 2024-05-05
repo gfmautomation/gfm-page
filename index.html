@@ -29,11 +29,6 @@
   <link href="assets/css/styles.css" rel="stylesheet">
 
   <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script>
-      function onSubmit() {
-          document.getElementById("php-email-form").submit()
-      }
-  </script>
   <!-- =======================================================
   * Template Name: Arsha
   * Updated: Mar 10 2024 with Bootstrap v5.3.3
@@ -687,6 +682,7 @@
           </div> -->
           <div class="center-contact">          
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <!-- data-sitekey='6LeC5c4pAAAAAH0zfM1PaFTtMr1PYi6mCoAVFKxJ' -->
               <form action="https://formspree.io/f/mwkgrlrg" class="php-email-form" method="post"> <!-- role="form"> -->
                 <div class="row">
                   <div class="form-group col-md-6">
@@ -711,8 +707,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center"><button class='g-recaptcha' data-sitekey='6LeC5c4pAAAAAH0zfM1PaFTtMr1PYi6mCoAVFKxJ'
-                  data-callback='onSubmit' data-action='submit' type="submit">Send Message</button></div>
+                <div class="text-center"><button class='g-recaptcha' type="submit">Send Message</button></div>
               </form>
             </div>
           </div>
