@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"
+    />
+    <title>Your AI Assistant Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .cta-button-container {
+        display: flex;
+      }
+
+      .cta-button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your Sabina Demo</h1>
+      <p>Welcome to the demo of your custom-built AI assistant called Sabina!</p>
+      <p>
+        This is just a prototype of what Sabina can do for you. It will show you the power of AI and
+        how it can revolutionize your business.
+      </p>
+      <p>
+        Start chatting with Sabina now by clicking the button below or by clicking the bubble on the
+        bottom right of your screen!
+      </p>
+      <div class="cta-button-container">
+        <button class="cta-button" onclick="handleButtonClick()">Start chatting</button>
+      </div>
+    </div>
+    <script>
+      function handleButtonClick() {
+        document.querySelector('#sabina-root [class^=FloatingButton]').click();
+      }
+    </script>
+    <script>
+      (() => {
+        // src/load-sabina/util.ts
+        function loadScript(url) {
+          const script = document.createElement('script');
+          script.src = addDateToQueryParams(url);
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          return script;
+        }
+
+        function addDateToQueryParams(url) {
+          return `${url}?date=${Date.now()}`;
+        }
+
+        // src/load-sabina/loadClient.ts
+        var baseUrl = 'https://sabina-public-static-assets.s3.ap-southeast-2.amazonaws.com/clients';
+        function loadClient(name) {
+          loadScript(`${baseUrl}/${name}.js`);
+        }
+
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var assistant = urlParams.get('assistant') ?? 'tcc';
+        loadClient(assistant);
+      })();
+    </script>
+  </body>
+</html>
