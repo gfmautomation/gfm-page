@@ -61,16 +61,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>Your Sabina Demo</h1>
-      <p>Welcome to the demo of your custom-built AI assistant called Sabina!</p>
-      <p>
-        This is just a prototype of what Sabina can do for you. It will show you the power of AI and
-        how it can revolutionize your business.
-      </p>
+      <h1>Building Code Assistant Demo</h1>
+      <p>Welcome! Sabina, the AI assisant, is here to help you with questions regarding the building code of Australia.
+        Avoid flicking through the code your self, get Sabina, to look for you and tell you the answers! Make sure you ask it for the page numbers to check the information yourself though.
+        This AI assistant is for demonstration purposes only. Although it is linked to the Australian building code, we do not guarantee its accuracy in this demo version and will not take responsibility for consequences due to the inaccuracy of the information.</p>
       <p>
         Start chatting with Sabina now by clicking the button below or by clicking the bubble on the
         bottom right of your screen!
       </p>
+      <p>Example questions:</p>
+      <p>
+        What fall do I need on a bathroom floor?
+      </p>
+      <p> What is the height limit for a house in NSW?</p>
       <div class="cta-button-container">
         <button class="cta-button" onclick="handleButtonClick()">Start chatting</button>
       </div>
@@ -98,7 +101,8 @@
         // src/load-sabina/loadClient.ts
         var baseUrl = 'https://sabina-public-static-assets.s3.ap-southeast-2.amazonaws.com/clients';
         function loadClient(name) {
-          loadScript(`${baseUrl}/${name}.js`);
+          loadScript(`${baseUrl}/construction.js`);
+          // loadScript(`${baseUrl}/${name}.js`);
         }
 
         var queryString = window.location.search;
