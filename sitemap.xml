@@ -20,15 +20,22 @@
 
   <!-- Contact cards -->
   <url>
-    <loc>https://www.gfmautomation.com.au/contact/contact-card-ff.html</loc>
+    <loc>https://www.gfmautomation.com.au/pages/contacts/contact-card-ff.html</loc>
     <lastmod>2024-07-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.gfmautomation.com.au/contact/contact-card-gm.html</loc>
+    <loc>https://www.gfmautomation.com.au/pages/contacts/contact-card-gm.html</loc>
     <lastmod>2024-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gfmautomation.com.au/pages/services/construction-assistant.html</loc>
+    <lastmod>2024-08-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
