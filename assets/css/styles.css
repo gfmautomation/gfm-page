@@ -566,12 +566,15 @@ section {
   left: calc(50% - 20px);
 }
 
+.blog-section {
+  padding-top:20px;
+}
+
 .section-title p {
   margin-bottom: 0;
 }
 .section-title .blog {
-
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .blog-content h2 {
