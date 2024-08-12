@@ -185,7 +185,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #47b2e4;
 }
 
@@ -240,11 +240,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #47b2e4;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -256,7 +256,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -268,7 +268,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -340,7 +340,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #47b2e4;
 }
 
@@ -376,11 +376,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #47b2e4;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
   visibility: visible !important;
 }
@@ -394,8 +394,8 @@ h6 {
   background: #37517e;
 }
 
-#hero img{
-  width:90%;
+#hero img {
+  width: 90%;
 }
 
 #hero .container {
@@ -567,7 +567,7 @@ section {
 }
 
 .blog-section {
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 .section-title p {
@@ -587,7 +587,7 @@ section {
 .blog-content h3 {
   font-size: 1.3em;
   text-decoration-line: underline;
-  text-decoration-color: #37517e ;
+  text-decoration-color: #37517e;
   padding-bottom: 15px;
   padding-top: 10px;
 }
@@ -641,7 +641,7 @@ section {
   position: relative;
 }
 
-.about .content ul li+li {
+.about .content ul li + li {
   margin-top: 10px;
 }
 
@@ -719,7 +719,7 @@ section {
   list-style: none;
 }
 
-.why-us .accordion-list li+li {
+.why-us .accordion-list li + li {
   margin-top: 15px;
 }
 
@@ -781,7 +781,6 @@ section {
 }
 
 @media (max-width: 1024px) {
-
   .why-us .content,
   .why-us .accordion-list {
     padding-left: 0;
@@ -863,12 +862,12 @@ section {
 }
 
 .skills .progress .skill .val .second {
-  margin-top:40px;
+  margin-top: 40px;
   float: right;
 }
 
 .val {
-  display:inline-flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -934,7 +933,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1091,7 +1091,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1099,7 +1102,10 @@ section {
   border: 1px solid #47b2e4;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #47b2e4;
 }
 
@@ -1122,7 +1128,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1158,13 +1164,12 @@ section {
   border-radius: 50%;
 }
 
-
 .team .member .pic {
   overflow: hidden;
   width: 180px;
   height: auto;
   min-width: 180px;
-  max-height:180px;
+  max-height: 180px;
 }
 
 .team .member .pic img {
@@ -1242,7 +1247,7 @@ section {
   color: #fff;
 }
 
-.team .member .social a+a {
+.team .member .social a + a {
   margin-left: 8px;
 }
 
@@ -1384,7 +1389,7 @@ section {
   list-style: none;
 }
 
-.faq .faq-list li+li {
+.faq .faq-list li + li {
   margin-top: 15px;
 }
 
@@ -1467,8 +1472,8 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
-.center-contact{
-  display: flex !important; 
+.center-contact {
+  display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   margin-left: auto !important;
@@ -1568,7 +1573,7 @@ section {
   font-weight: 600;
 }
 
-.php-email-form .error-message br+br {
+.php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1639,7 +1644,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #47b2e4;
   border: 0;
   padding: 12px 34px;
@@ -1648,7 +1653,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #209dd8;
 }
 
@@ -1693,11 +1698,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #4668a2;
@@ -1739,13 +1744,13 @@ section {
   text-align: left;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1761,7 +1766,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #209dd8;
 }
 
@@ -1896,7 +1901,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1904,11 +1908,11 @@ section {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  max-width:700px;
+  max-width: 700px;
 }
 
 @media (max-width: 768px) {
   .blog-content {
-    max-width:90%;
+    max-width: 90%;
   }
 }

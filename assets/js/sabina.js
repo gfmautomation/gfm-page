@@ -21,5 +21,5 @@
     loadScript(`${baseUrl}/${name}.js`);
   }
 
-  loadClient('gfm');
+  loadClient("gfm");
 })();

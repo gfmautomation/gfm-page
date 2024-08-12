@@ -1,375 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>GFM Automation</title>
+    <meta content="Business AI Automation Specialists" name="description" />
+    <meta
+      content="Business Automation, AI, Software integration, Automation, Custom Software "
+      name="keywords"
+    />
 
-  <title>GFM Automation</title>
-  <meta content="Business AI Automation Specialists" name="description">
-  <meta content="Business Automation, AI, Software integration, Automation, Custom Software " name="keywords">
+    <meta property="og:title" content="GFM Automation" />
+    <meta property="og:image" content="assets/img/newlogo-blue.png" />
+    <meta
+      property="og:description"
+      content="Automate your business and start leveraging AI today!"
+    />
+    <meta property="og:url" content="gfmautomation.com.au" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:alt" content="GFM Automation logo" />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:title" content="GFM Automation" />
-  <meta property="og:image" content="assets/img/newlogo-blue.png" />
-  <meta property="og:description" content="Automate your business and start leveraging AI today!" />
-  <meta property="og:url" content="gfmautomation.com.au" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:alt" content="GFM Automation logo" />
-  <meta property="og:type" content="website" />
+    <!-- Favicons -->
+    <link href="assets/img/newlogo-blue.png" rel="icon" />
+    <link href="assets/img/new-apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/newlogo-blue.png" rel="icon">
-  <link href="assets/img/new-apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/styles.css" rel="stylesheet">
-
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-  <!-- =======================================================
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- =======================================================
   * Template Name: Arsha
   * Updated: Mar 10 2024 with Bootstrap v5.3.3
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-   <!-- Hotjar Tracking Code for Site 5035951 (name missing) -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:5035951,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-</head>
+    <!-- Hotjar Tracking Code for Site 5035951 (name missing) -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5035951, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto">
+          <a href="index.html"
+            ><img src="assets/img/newlogo-white.png" , alt="GFM logo" /> GFM
+            Automation</a
+          >
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/newlogo-white.png", alt="GFM logo"> GFM Automation</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <!--<li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>-->
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="https://www.getsabina.com">Sabina</a></li>
-              <li><a href="https://www.gfmautomation.com.au/pages/products/construction-assistant.html">Australian Building Code Assistant</a></li>
-              <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <!--<li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li>-->
+            <li><a class="nav-link scrollto" href="#team">Team</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Products</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="https://www.getsabina.com">Sabina</a></li>
+                <li>
+                  <a
+                    href="https://www.gfmautomation.com.au/pages/products/construction-assistant.html"
+                    >Australian Building Code Assistant</a
+                  >
+                </li>
+                <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                 </ul>
-              -->
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#contact">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Tired of repeating admin tasks day in and day out?</h1>
-          <h2>We can make business flow through automation</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="https://outlook.office.com/bookwithme/user/9109ad4f7f4345c395b8460f8eccf674@gfmautomation.com.au/meetingtype/hS6yCa_NE0SZ5q0FSuHOPA2?anonymous&ep=mlink" class="btn-get-started scrollto">Book Now</a>
-            <a href="#contact" style="margin-left: 15px; background-color: white; color:#37517e;" class="btn-get-started scrollto">Contact Us</a>
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="business tech and automation">
-        </div>
+              --></ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li>
+              <a class="getstarted scrollto" href="#contact">Get Started</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-    </div>
+    </header>
+    <!-- End Header -->
 
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
       <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="Myob">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/xero-logo.svg" heith="50" class="img-fluid" alt="Xero">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/airtable-icon.webp" heith="50" class="img-fluid" alt="Airtable">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="Lilly">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="Citrus">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/zapier-icon.png" class="img-fluid" alt="Zapier">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Cliens Section -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Us</h2>
-        </div>
-
-        <div class="row content">
-          <div style= "text-align: justify;" class="col-lg-6">
-            <p>
-              We know what it can be like when business is growing and processes get more and more complicated. It can be overwhelming!
-              We are a company that is all about making it simple for businesses to use software and thrive.
-              We are all about lean yet astonishing solutions that help you grow your business.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> We leverage AI to make things happen for you</li>
-              <li><i class="ri-check-double-line"></i> We intergrate software so you don't have to copy and paste data all over the shop!</li>
-              <li><i class="ri-check-double-line"></i> We make it easy. Talk to us and we'll show you what's possible with today's technology</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              GFM automation started out of the dream of bringing the best and latest technology to all businesses.
-              There are so many businesses struggling to make a profit because their systems aren't working for them.
-              So many small business owners are wasting time and money copying and pasting data from one software to another 
-              and they don't know that they could rid themselves of these repetitive tasks with the right software tools.
-              We set up and create software tools that allow you to stop focusing on repetitive admin tasks and allow you to focus on your customers!
-            </p>
-            <a href="#contact" class="btn-learn-more">Learn More</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
         <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h1>Tired of repeating admin tasks day in and day out?</h1>
+            <h2>We can make business flow through automation</h2>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <a
+                href="https://outlook.office.com/bookwithme/user/9109ad4f7f4345c395b8460f8eccf674@gfmautomation.com.au/meetingtype/hS6yCa_NE0SZ5q0FSuHOPA2?anonymous&ep=mlink"
+                class="btn-get-started scrollto"
+                >Book Now</a
+              >
+              <a
+                href="#contact"
+                style="
+                  margin-left: 15px;
+                  background-color: white;
+                  color: #37517e;
+                "
+                class="btn-get-started scrollto"
+                >Contact Us</a
+              >
+              <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+            </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/img/hero-img.png"
+              class="img-fluid animated"
+              alt="business tech and automation"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Make long-winded, boring, complicated admin processes <strong>a thing of the past!</strong></h3>
-              <p>
-                Our automations will kick-start your business growth so that you can focus on your business, not software management
-              </p>
+    <main id="main">
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients section-bg">
+        <div class="container">
+          <div class="row" data-aos="zoom-in">
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt="Myob"
+              />
             </div>
 
-            <div class="accordion-list">
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/xero-logo.svg"
+                heith="50"
+                class="img-fluid"
+                alt="Xero"
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/airtable-icon.webp"
+                heith="50"
+                class="img-fluid"
+                alt="Airtable"
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-4.png"
+                class="img-fluid"
+                alt="Lilly"
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/client-5.png"
+                class="img-fluid"
+                alt="Citrus"
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/img/clients/zapier-icon.png"
+                class="img-fluid"
+                alt="Zapier"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cliens Section -->
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About Us</h2>
+          </div>
+
+          <div class="row content">
+            <div style="text-align: justify" class="col-lg-6">
+              <p>
+                We know what it can be like when business is growing and
+                processes get more and more complicated. It can be overwhelming!
+                We are a company that is all about making it simple for
+                businesses to use software and thrive. We are all about lean yet
+                astonishing solutions that help you grow your business.
+              </p>
               <ul>
                 <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> We listen to you <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Nobody knows your business like you do. We listen as you tell us about your pain-points and show us how you work.
-                    </p>
-                  </div>
+                  <i class="ri-check-double-line"></i> We leverage AI to make
+                  things happen for you
                 </li>
-
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> We work on a solution <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      We assess your situation and find the right solution for you, making sure that it is tailored to your needs.
-                    </p>
-                  </div>
+                  <i class="ri-check-double-line"></i> We intergrate software so
+                  you don't have to copy and paste data all over the shop!
                 </li>
-
                 <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> You enjoy the benefits <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Watch the magic happen when all your admin gets done that much quicker! It is amazing what the right tools can do for you.
-                    </p>
-                  </div>
+                  <i class="ri-check-double-line"></i> We make it easy. Talk to
+                  us and we'll show you what's possible with today's technology
                 </li>
-
               </ul>
             </div>
-
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                GFM automation started out of the dream of bringing the best and
+                latest technology to all businesses. There are so many
+                businesses struggling to make a profit because their systems
+                aren't working for them. So many small business owners are
+                wasting time and money copying and pasting data from one
+                software to another and they don't know that they could rid
+                themselves of these repetitive tasks with the right software
+                tools. We set up and create software tools that allow you to
+                stop focusing on repetitive admin tasks and allow you to focus
+                on your customers!
+              </p>
+              <a href="#contact" class="btn-learn-more">Learn More</a>
+            </div>
           </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
+      </section>
+      <!-- End About Us Section -->
 
-      </div>
-    </section><!-- End Why Us Section -->
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+            >
+              <div class="content">
+                <h3>
+                  Make long-winded, boring, complicated admin processes
+                  <strong>a thing of the past!</strong>
+                </h3>
+                <p>
+                  Our automations will kick-start your business growth so that
+                  you can focus on your business, not software management
+                </p>
+              </div>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      class="collapse"
+                      data-bs-target="#accordion-list-1"
+                      ><span>01</span> We listen to you
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-1"
+                      class="collapse show"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Nobody knows your business like you do. We listen as you
+                        tell us about your pain-points and show us how you work.
+                      </p>
+                    </div>
+                  </li>
 
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="skills icon">
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>02</span> We work on a solution
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        We assess your situation and find the right solution for
+                        you, making sure that it is tailored to your needs.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-3"
+                      class="collapsed"
+                      ><span>03</span> You enjoy the benefits
+                      <i class="bx bx-chevron-down icon-show"></i
+                      ><i class="bx bx-chevron-up icon-close"></i
+                    ></a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Watch the magic happen when all your admin gets done
+                        that much quicker! It is amazing what the right tools
+                        can do for you.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              style="background-image: url('assets/img/why-us.png')"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>We choose to use only the best</h3>
-            <p class="fst-italic">
-              There is no one-size-fits-all solution with GFM Automation. These are some of the tools we may use to bring your business automations to life 
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img
+                src="assets/img/skills.png"
+                class="img-fluid"
+                alt="skills icon"
+              />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <h3>We choose to use only the best</h3>
+              <p class="fst-italic">
+                There is no one-size-fits-all solution with GFM Automation.
+                These are some of the tools we may use to bring your business
+                automations to life
+              </p>
+
+              <div class="skills-content">
+                <div class="progress">
+                  <span class="skill">
+                    <img
+                      src="assets/img/ai-icon.png"
+                      width="60"
+                      alt="artificial intelligence"
+                    />
+                    <i class="val">Leverage the power of AI</i>
+                  </span>
+                  <!--<div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                --></div>
+
+                <div class="progress">
+                  <span class="skill">
+                    <img
+                      tyle="margin-top: -5px;"
+                      src="assets/img/clients/zapier-icon.png"
+                      width="80"
+                      alt="zapier"
+                    />
+                    <i style="display: flex" class="val second"
+                      >Integrate almost any app with a zap!</i
+                    >
+                  </span>
+                  <!--<div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                --></div>
+
+                <div class="progress">
+                  <span class="skill">
+                    <img
+                      style="margin-top: -8px"
+                      src="assets/img/cyber-icon.webp"
+                      width="70"
+                      alt="cyber security"
+                    />
+                    <i class="val third"
+                      >Encrypted data ensuring safe communications</i
+                    >
+                  </span>
+                  <!--<div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                --></div>
+
+                <div class="progress">
+                  <span class="skill">
+                    <img
+                      style="margin-top: 5px"
+                      src="assets/img/clients/airtable-icon.webp"
+                      width="55"
+                      alt="airtable"
+                    />
+                    <i class="val third"
+                      >A powerful database with calendar capabilities and much
+                      more</i
+                    >
+                  </span>
+                  <!--<div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                --></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>
+              We specialise in integrating software and creating apps that will
+              empower your business
             </p>
+          </div>
 
-            <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill"> <img src="assets/img/ai-icon.png" width="60" alt="artificial intelligence"> <i class="val">Leverage the power of AI</i> </span>
-                <!--<div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                -->
+          <div class="row">
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">A.I. Customer Service</a></h4>
+                <p>
+                  Sabina is your own website customer service assistant that can
+                  generate quotes, take bookings and more! For more information
+                  check-out <a href="https://www.getsabina.com">Sabina</a>
+                </p>
               </div>
-
-              <div class="progress">
-                <span class="skill"> <img tyle="margin-top: -5px;" src="assets/img/clients/zapier-icon.png" width="80" alt="zapier"> <i style="display: flex;" class="val second">Integrate almost any app with a zap!</i> </span>
-                <!--<div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                -->
-              </div>
-
-
-
-              <div class="progress">
-                <span class="skill"> <img style="margin-top: -8px;" src="assets/img/cyber-icon.webp" width="70" alt="cyber security"> <i class="val third">Encrypted data ensuring safe communications</i> </span>
-                <!--<div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                -->
-              </div>
-
-              <div class="progress">
-                <span class="skill"> <img style="margin-top: 5px;" src="assets/img/clients/airtable-icon.webp" width="55" alt="airtable"> <i class="val third">A powerful database with calendar capabilities and much more</i> </span>
-                <!--<div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                -->
-              </div>
-
-
             </div>
 
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4>No More Forms</h4>
+                <p>
+                  Stop filling out forms and copying information from one system
+                  to another. Get your A.I. business assistant to do it for you!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4>Boost Efficiency</h4>
+                <p>
+                  What if you could get things done 3x as fast in your business?
+                  The technology to boost your business exists. We can help you
+                  find the right solution and make it work!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-layer"></i></div>
+                <h4>Data analysis</h4>
+                <p>
+                  Analyse all the data you need automatically and make your
+                  business respond to change rather than react
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- End Services Section -->
 
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>We specialise in integrating software and creating apps that will empower your business</p>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">A.I. Customer Service</a></h4>
-              <p>Sabina is your own website customer service assistant that can generate quotes, take bookings and more! For more information check-out <a href="https://www.getsabina.com">Sabina</a></p>
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Want to speak to someone?</h3>
+              <p>
+                Book a time with one of our team members and start your business
+                on the journey of tech empowerment.
+              </p>
             </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4>No More Forms</h4>
-              <p>Stop filling out forms and copying information from one system to another. Get your A.I. business assistant to do it for you!</p>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a
+                class="cta-btn align-middle"
+                href="https://outlook.office.com/bookwithme/user/9109ad4f7f4345c395b8460f8eccf674@gfmautomation.com.au/meetingtype/hS6yCa_NE0SZ5q0FSuHOPA2?anonymous&ep=mcard"
+                >Book A Consultation</a
+              >
             </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4>Boost Efficiency</h4>
-              <p>What if you could get things done 3x as fast in your business? The technology to boost your business exists. We can help you find the right solution and make it work!</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4>Data analysis</h4>
-              <p>Analyse all the data you need automatically and make your business respond to change rather than react</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Want to speak to someone?</h3>
-            <p> Book a time with one of our team members and start your business on the journey of tech empowerment.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://outlook.office.com/bookwithme/user/9109ad4f7f4345c395b8460f8eccf674@gfmautomation.com.au/meetingtype/hS6yCa_NE0SZ5q0FSuHOPA2?anonymous&ep=mcard">Book A Consultation</a>
           </div>
         </div>
+      </section>
+      <!-- End Cta Section -->
 
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!--
+      <!-- ======= Portfolio Section ======= -->
+      <!--
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -482,63 +712,98 @@
       </div>
     </section>
   -->
-    <!-- End Portfolio Section -->
+      <!-- End Portfolio Section -->
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Our team is passionate about making your business flow by using our skills in A.I., data analysis, software programming, and all things technology.</p>
-        </div>
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>
+              Our team is passionate about making your business flow by using
+              our skills in A.I., data analysis, software programming, and all
+              things technology.
+            </p>
+          </div>
 
-        <div class="row">
-          
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <a href="/pages/contacts/contact-card-gm.html" class="nobubble"> <div class="pic"> <img src="assets/img/team/gabriele.jpg" alt="Gabriele" class="img-fluid" alt="Gabriele Contact"> </a></div>
-              <div class="member-info">
-                <h4>Gabriele Motta</h4>
-                <span>Chief Executive Officer</span>
-                <p>Passionate about empowering businesses</p>
-                <div class="social">
-                  <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
-                  <a href="https://www.facebook.com/gabriele.motta.9047/"><i class="ri-facebook-fill"></i></a>
-                  <!-- <a href=""><i class="ri-instagram-fill"></i></a> -->
-                  <a href="https://www.linkedin.com/in/gabriele-motta-8074ab176/"> <i class="ri-linkedin-box-fill"></i> </a>
-                  <a href="mailto:gabriele@gfmautomation.com.au"><i class="ri-mail-fill"></i></a>
+          <div class="row">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <a href="/pages/contacts/contact-card-gm.html" class="nobubble">
+                  <div class="pic">
+                    <img
+                      src="assets/img/team/gabriele.jpg"
+                      alt="Gabriele"
+                      class="img-fluid"
+                      alt="Gabriele Contact"
+                    /></div
+                ></a>
+                <div class="member-info">
+                  <h4>Gabriele Motta</h4>
+                  <span>Chief Executive Officer</span>
+                  <p>Passionate about empowering businesses</p>
+                  <div class="social">
+                    <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
+                    <a href="https://www.facebook.com/gabriele.motta.9047/"
+                      ><i class="ri-facebook-fill"></i
+                    ></a>
+                    <!-- <a href=""><i class="ri-instagram-fill"></i></a> -->
+                    <a
+                      href="https://www.linkedin.com/in/gabriele-motta-8074ab176/"
+                    >
+                      <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="mailto:gabriele@gfmautomation.com.au"
+                      ><i class="ri-mail-fill"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="member d-flex align-items-start">
+                <a href="/pages/contacts/contact-card-ff.html" class="nobubble">
+                  <div class="pic">
+                    <img
+                      src="assets/img/team/francesco2.jpg"
+                      alt="Frankie"
+                      class="img-fluid"
+                      alt="Francesco Contact"
+                    />
+                  </div>
+                </a>
+                <div class="member-info">
+                  <h4>Francesco Ferraioli</h4>
+                  <span>Chief Technology Officer</span>
+                  <p>Software enthusiast and solutions architect</p>
+                  <div class="social">
+                    <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
+                    <a href="https://m.facebook.com/FrancescoFrankie"
+                      ><i class="ri-facebook-fill"></i
+                    ></a>
+                    <!-- <a href=""><i class="ri-instagram-fill"></i></a> -->
+                    <a href="https://www.linkedin.com/in/ferraiolifrancesco/">
+                      <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="mailto:francesco@gfmautomation.com.au"
+                      ><i class="ri-mail-fill"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          
-
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="member d-flex align-items-start">
-              <a href="/pages/contacts/contact-card-ff.html" class="nobubble"> <div class="pic"><img src="assets/img/team/francesco2.jpg" alt="Frankie" class="img-fluid" alt="Francesco Contact"></div> </a>
-              <div class="member-info">
-                <h4>Francesco Ferraioli</h4>
-                <span>Chief Technology Officer</span>
-                <p>Software enthusiast and solutions architect</p>
-                <div class="social">
-                  <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
-                  <a href="https://m.facebook.com/FrancescoFrankie"><i class="ri-facebook-fill"></i></a>
-                  <!-- <a href=""><i class="ri-instagram-fill"></i></a> -->
-                  <a href="https://www.linkedin.com/in/ferraiolifrancesco/"> <i class="ri-linkedin-box-fill"></i> </a>
-                  <a href="mailto:francesco@gfmautomation.com.au"><i class="ri-mail-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
         </div>
+      </section>
+      <!-- End Team Section -->
 
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!--
+      <!-- ======= Pricing Section ======= -->
+      <!--
     <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
 
@@ -599,48 +864,94 @@
       </div>
     </section>
   -->
-    <!-- End Pricing Section -->
-  
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
+      <!-- End Pricing Section -->
 
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Got a question?
+      <!-- ======= Frequently Asked Questions Section ======= -->
+      <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Got a question?</p>
           </div>
 
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How much time could GFM save my business? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  That's not an easy question to answer, but say you could save 10 minutes a day, per employee. Over a year you would have saved more than 1 week of working hours per employee! Isn't that amazing!? 
-                </p>
-              </div>
-            </li>
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  class="collapse"
+                  data-bs-target="#faq-list-1"
+                  >How much time could GFM save my business?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-1"
+                  class="collapse show"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    That's not an easy question to answer, but say you could
+                    save 10 minutes a day, per employee. Over a year you would
+                    have saved more than 1 week of working hours per employee!
+                    Isn't that amazing!?
+                  </p>
+                </div>
+              </li>
 
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Will A.I. replace my employees? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  We don't believe in replacing employees completely. We believe that A.I. should be used as a tool to empower your workforce and allow them to increase their productivity exponentially while decreasing the effort they need to put in!
-                </p>
-              </div>
-            </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                  >Will A.I. replace my employees?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    We don't believe in replacing employees completely. We
+                    believe that A.I. should be used as a tool to empower your
+                    workforce and allow them to increase their productivity
+                    exponentially while decreasing the effort they need to put
+                    in!
+                  </p>
+                </div>
+              </li>
 
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Why should I consider changing the way my business runs? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  It's all up to you. It's your choice whether to improve the efficiency of your processes. Even though change is never easy, changing in the right direction will ultimately bring you greater results. If you are ready to empower your business with the right technology, GFM Automation is here to help!
-                </p>
-              </div>
-            </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bx-help-circle icon-help"></i>
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  class="collapsed"
+                  >Why should I consider changing the way my business runs?
+                  <i class="bx bx-chevron-down icon-show"></i
+                  ><i class="bx bx-chevron-up icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    It's all up to you. It's your choice whether to improve the
+                    efficiency of your processes. Even though change is never
+                    easy, changing in the right direction will ultimately bring
+                    you greater results. If you are ready to empower your
+                    business with the right technology, GFM Automation is here
+                    to help!
+                  </p>
+                </div>
+              </li>
 
-            <!-- <li data-aos="fade-up" data-aos-delay="400">
+              <!-- <li data-aos="fade-up" data-aos-delay="400">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
@@ -649,7 +960,7 @@
               </div>
             </li> -->
 
-            <!-- <li data-aos="fade-up" data-aos-delay="500">
+              <!-- <li data-aos="fade-up" data-aos-delay="500">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
@@ -657,25 +968,25 @@
                 </p>
               </div>
             </li> -->
-
-          </ul>
+            </ul>
+          </div>
         </div>
+      </section>
+      <!-- End Frequently Asked Questions Section -->
 
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>
+              If you are looking to automate your business processes, whether
+              they be admin, data or customer service related we are here to
+              help. Start using AI to help your business grow today!
+            </p>
+          </div>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>
-            If you are looking to automate your business processes, whether they be admin, data or customer service related we are here to help. Start using AI to help your business grow today!
-          </p>
-        </div>
-
-        <!-- <div class="row">
+          <!-- <div class="row">
 
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
@@ -701,148 +1012,212 @@
             </div>
 
           </div> -->
-          <div class="center-contact">          
+          <div class="center-contact">
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <!-- data-sitekey='6LeC5c4pAAAAAH0zfM1PaFTtMr1PYi6mCoAVFKxJ' -->
-              <form action="https://formspree.io/f/mwkgrlrg" class="php-email-form" method="post"> <!-- role="form"> -->
+              <form
+                action="https://formspree.io/f/mwkgrlrg"
+                class="php-email-form"
+                method="post"
+              >
+                <!-- role="form"> -->
                 <div class="row">
                   <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" required>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <label for="name">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
                 </div>
                 <div class="form-group">
                   <label for="name">Message</label>
-                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    required
+                  ></textarea>
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
                 </div>
-                <div class="text-center"><button class='g-recaptcha' type="submit">Send Message</button></div>
+                <div class="text-center">
+                  <button class="g-recaptcha" type="submit">
+                    Send Message
+                  </button>
+                </div>
               </form>
             </div>
           </div>
-
         </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
 
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Want to get free software that can help you run your business and keep up to date with the latest technology? Join our newsletter for free advice every quarter.</p>
-            <form action="https://formspree.io/f/mwkgrlag" class="php-email-form" method="post">
-              <input type="email" name="email">
-              <input type="submit" value="Subscribe">
-              <div class="submit-result">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Thank you for subscribing!</div>
-              </div>
-            </form>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Want to get free software that can help you run your business
+                and keep up to date with the latest technology? Join our
+                newsletter for free advice every quarter.
+              </p>
+              <form
+                action="https://formspree.io/f/mwkgrlag"
+                class="php-email-form"
+                method="post"
+              >
+                <input type="email" name="email" />
+                <input type="submit" value="Subscribe" />
+                <div class="submit-result">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Thank you for subscribing!</div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>GFM Automation</h3>
+              <p>
+                Sydney <br />
+                NSW<br />
+                Australia <br /><br />
+                <!-- <strong>Email:</strong> info@gfmautomation.com.au<br> -->
+              </p>
+            </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>GFM Automation</h3>
-            <p>
-              Sydney <br>
-              NSW<br>
-              Australia <br><br>
-              <!-- <strong>Email:</strong> info@gfmautomation.com.au<br> -->
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#about">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#contact">Contact Us</a>
+                </li>
+                <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
-            </ul>
-          </div>
+              </ul>
+            </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-<!--               <li><i class="bx bx-chevron-right"></i> Software Development</li>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <!--               <li><i class="bx bx-chevron-right"></i> Software Development</li>
               <li><i class="bx bx-chevron-right"></i> Business Automation</li>
               <li><i class="bx bx-chevron-right"></i> AI integration</li>
               <li><i class="bx bx-chevron-right"></i> Systems integration</li>
               <li><i class="bx bx-chevron-right"></i> Data Analysis</li> -->
-              <li><i class="bx bx-chevron-right"></i> Software Development</li>
-              <li><i class="bx bx-chevron-right"></i> Business Automation</li>
-              <li><i class="bx bx-chevron-right"></i> AI integration</li>
-              <li><i class="bx bx-chevron-right"></i> Systems integration</li>
-              <li><i class="bx bx-chevron-right"></i> Data Analysis</li>
-            </ul>
-          </div>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Software Development
+                </li>
+                <li><i class="bx bx-chevron-right"></i> Business Automation</li>
+                <li><i class="bx bx-chevron-right"></i> AI integration</li>
+                <li><i class="bx bx-chevron-right"></i> Systems integration</li>
+                <li><i class="bx bx-chevron-right"></i> Data Analysis</li>
+              </ul>
+            </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Want to keep up to date with the latest tech tips for your business? Follow us on our socials!</p>
-            <div class="social-links mt-3">
-              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-              <a href="https://www.facebook.com/profile.php?id=100090085441345&paipv=0&eav=AfYcZrD_LkaJNJi7IyfeAnIKOMcMStnmyZInYd5Gq6LycV9dI4TN2PJFCrB7hnqhyn4" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/gfmautomation/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BPkh%2FMWGbSpKkYVBIqFjkGg%3D%3D" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Want to keep up to date with the latest tech tips for your
+                business? Follow us on our socials!
+              </p>
+              <div class="social-links mt-3">
+                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=100090085441345&paipv=0&eav=AfYcZrD_LkaJNJi7IyfeAnIKOMcMStnmyZInYd5Gq6LycV9dI4TN2PJFCrB7hnqhyn4"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/gfmautomation/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BPkh%2FMWGbSpKkYVBIqFjkGg%3D%3D"
+                  class="linkedin"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>GFM Automation</span></strong>. All Rights Reserved
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>GFM Automation</span></strong
+          >. All Rights Reserved
+        </div>
       </div>
-    </div>
-  </footer><!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
-  <!-- <div id="preloader"></div>
+    <!-- <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <script src="assets/js/sabina.js"></script>
-</body>
-
+    <script src="assets/js/sabina.js"></script>
+  </body>
 </html>

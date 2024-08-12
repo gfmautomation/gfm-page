@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -62,34 +62,42 @@
   <body>
     <div class="container">
       <h1>Building Code Assistant Demo</h1>
-      <p>Welcome! Sabina, the AI assisant, is here to help you with questions regarding the building code of Australia.
-        Avoid flicking through the code your self, get Sabina, to look for you and tell you the answers! Make sure you ask it for the page numbers to check the information yourself though.
-        This AI assistant is for demonstration purposes only. Although it is linked to the Australian building code, we do not guarantee its accuracy in this demo version and will not take responsibility for consequences due to the inaccuracy of the information.</p>
       <p>
-        Start chatting with Sabina now by clicking the button below or by clicking the bubble on the
-        bottom right of your screen!
+        Welcome! Sabina, the AI assisant, is here to help you with questions
+        regarding the building code of Australia. Avoid flicking through the
+        code your self, get Sabina, to look for you and tell you the answers!
+        Make sure you ask it for the page numbers to check the information
+        yourself though. This AI assistant is for demonstration purposes only.
+        Although it is linked to the Australian building code, we do not
+        guarantee its accuracy in this demo version and will not take
+        responsibility for consequences due to the inaccuracy of the
+        information.
+      </p>
+      <p>
+        Start chatting with Sabina now by clicking the button below or by
+        clicking the bubble on the bottom right of your screen!
       </p>
       <p>Example questions:</p>
-      <p>
-        What fall do I need on a bathroom floor?
-      </p>
-      <p> What is the height limit for a house in NSW?</p>
+      <p>What fall do I need on a bathroom floor?</p>
+      <p>What is the height limit for a house in NSW?</p>
       <div class="cta-button-container">
-        <button class="cta-button" onclick="handleButtonClick()">Start chatting</button>
+        <button class="cta-button" onclick="handleButtonClick()">
+          Start chatting
+        </button>
       </div>
     </div>
     <script>
       function handleButtonClick() {
-        document.querySelector('#sabina-root [class^=FloatingButton]').click();
+        document.querySelector("#sabina-root [class^=FloatingButton]").click();
       }
     </script>
     <script>
       (() => {
         // src/load-sabina/util.ts
         function loadScript(url) {
-          const script = document.createElement('script');
+          const script = document.createElement("script");
           script.src = addDateToQueryParams(url);
-          script.type = 'text/javascript';
+          script.type = "text/javascript";
           document.body.appendChild(script);
           return script;
         }
@@ -99,7 +107,8 @@
         }
 
         // src/load-sabina/loadClient.ts
-        var baseUrl = 'https://sabina-public-static-assets.s3.ap-southeast-2.amazonaws.com/clients';
+        var baseUrl =
+          "https://sabina-public-static-assets.s3.ap-southeast-2.amazonaws.com/clients";
         function loadClient(name) {
           loadScript(`${baseUrl}/construction.js`);
           // loadScript(`${baseUrl}/${name}.js`);
@@ -107,7 +116,7 @@
 
         var queryString = window.location.search;
         var urlParams = new URLSearchParams(queryString);
-        var assistant = urlParams.get('assistant') ?? 'tcc';
+        var assistant = urlParams.get("assistant") ?? "tcc";
         loadClient(assistant);
       })();
     </script>
