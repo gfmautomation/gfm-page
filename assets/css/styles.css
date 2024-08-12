@@ -844,32 +844,65 @@ section {
   border-radius: 0;
 }
 
+.skills .progress-zap > span > * {
+  margin-top: -10px;
+}
+
+.skills .progress-sec > span img {
+  margin-top: -8px;
+}
+
+.skills .progress-sec > span > span {
+  height: 60px;
+  overflow: hidden;
+}
+
+.skills .progress-airtable > span > * {
+  margin-top: 5px;
+}
+
 .skills .progress .skill {
   padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
-  display: block;
+  display: flex;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #37517e;
 }
 
-.skills .progress .skill .val {
-  margin-top: 22px;
-  margin-right: 20%;
-  float: right;
-  font-style: normal;
+.skills .progress .skill > span:first-child {
+  width: 100px;
+  display: inline-block;
 }
 
-.skills .progress .skill .val .second {
-  margin-top: 40px;
-  float: right;
+.skills .progress .skill .val {
+  font-style: normal;
 }
 
 .val {
   display: inline-flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+@media screen and (max-width: 468px) {
+  .skills .progress {
+    height: 100px;
+  }
+
+  .skills .progress .skill {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills .progress .skill > span:first-child {
+    width: unset;
+  }
+
+  .skills .progress .skill > i {
+    text-align: center;
+  }
 }
 
 .skills .progress-bar-wrap {
