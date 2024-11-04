@@ -601,7 +601,7 @@ section {
 }
 
 .blog-content img {
-  max-width: fit-content;
+  width:100%;
 }
 /*--------------------------------------------------------------
 # Clients
