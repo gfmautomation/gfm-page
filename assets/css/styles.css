@@ -113,6 +113,10 @@ h6 {
   padding: 15px 0;
 }
 
+#header .fixed-top{
+  background-color:hsl(from #37517e 1 0.9);
+}
+
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(40, 58, 90, 0.9);
@@ -596,6 +600,9 @@ section {
   font-size: 1.1em;
 }
 
+.blog-content img {
+  max-width: fit-content;
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
