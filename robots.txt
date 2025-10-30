@@ -2,5 +2,6 @@ User-agent: *
 Disallow: /index.html
 Disallow: /contact-card-ff.html
 Disallow: /contact-card-gm.html
+Disallow/pages/products/construction-assistant.html
 
 Sitemap: https://www.gfmautomation.com.au/sitemap.xml
